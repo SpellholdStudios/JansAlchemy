@@ -1,0 +1,265 @@
+@0  = ~Kit d'alchimie de Jan~
+@1   = ~Ce mod ne s'installe que sur ToB, BGT, BG2:EE ou EET.~
+
+@11 = ~Livre poussiéreux~
+@12 = ~Livre des mixtures de Jan~
+@13 = ~Ce livre regroupe une collection de recettes de soupes, de jus divers, de sauces et de potions, rédigées par Jan. En dépit d'innombrables digressions sur les choux et les carottes, ainsi que sur les histoires de sa famille, vous arrivez à identifier huit recettes de potions utiles.
+
+D'après ses notes, vous pouvez en conclure que chacune de ces potions nécessite des ingrédients distincts et dans une quantité extrêmement précise. Le non respect de ces quantités aboutirait à un résultat catastrophique. Le seul « ingrédient » que vous pouvez utiliser sans compter est l'or, qui vous servira à acheter les outils et matériaux usuels.
+
+Recette n°1 : Potion du désir de bataille
+- 2 gemmes héliotropes
+- 1 opale noire
+- 1 huile de rapidité
+- 300 pièces d'or en matériaux divers
+
+Recette n°2 : re-mémorisation pour mage
+- 1 gemme lingot de lune
+- 1 grenat
+- 1 parchemin de Chaos
+- 700 pièces d'or en matériaux divers
+
+Recette n°3 : Don de l'assassin
+- 1 gemme pierre-de-lune
+- 3 gemmes de corail noir
+- 1 potion du Maître-Voleur
+- 700 pièces d'or
+
+Recette n°4 : Potion du puissance d'ogre
+- 1 gemme aigue-marine
+- 2 gemmes de diopside étoilé
+- 1 potion de force de géant du froid
+- 300 pièces d'or
+
+Recette n°5 : Potion de bouclier spirituel
+- 1 gemme chrysobéryl
+- 3 gemmes de jaspe
+- 2 potions de clarté
+- 1 parchemin de charme néfaste
+- 1 parchemin de clairvoyance
+- 2000 pièces d'or
+
+Recette n°6 : Protection magique
+- 1 saphir étoilé
+- 1 potion de défense
+- 1 parchemin de chance
+- 1000 pièces d'or
+
+Recette n°7 : Gardien du Portail
+- 1 opale d'eau
+- 1 gemme étoile d'eau
+- 3 potions de liberté
+- 1 parchemin d'emprisonnement
+- 3000 pièces d'or
+
+Recette n°8 : Potion de guérison
+- 3 potions de soins
+- 3 potions de grands soins
+- 300 pièces d'or~
+@14 = ~Livre des mixtures de Jan
+
+Il s'agit de 8 recettes de potions, rédigées par Jan.~
+
+/* unused as of v.7.0.0
+@21 = ~Potion~	// = #6976
+@22 = ~Les potions se trouvent généralement dans des flasques ou des fioles en céramique, cristal, verre ou métal. Ces flasques ou autres récipients contiennent généralement suffisamment de liquide pour fournir à une personne une dose complète et ainsi obtenir les effets désirés.
+
+PARAMÈTRES :
+
+Poids : 1~	// = #16264
+*/
+@23 = ~Gloup !~
+@24 = ~Expiré :~
+
+@31 = ~Potion du désir de bataille~
+@32 = ~L'énergie de cette potion envahit littéralement le corps de quiconque la boit et lui permet d'améliorer ses compétences en combat. Plus précisément, il reçoit des bonus de rapidité d'attaque et de précision pendant 15 tours.
+L'usage de plusieurs potions ne permet que d'en cumuler partiellement les effets.
+
+PARAMÈTRES :
+
+Poids : 1
+
+Non utilisable par :
+ Tueur de magicien~
+
+@33 = ~Potion de re-mémorisation pour mage~
+@34 = ~L'énergie de cette potion envahit littéralement le corps de quiconque la boit et lui permet de mémoriser des sorts qu'il a déjà lancés.
+
+PARAMÈTRES :
+
+- Le mage retrouve l'usage d'un sort par niveau, des niveaux 1 à 5.
+
+Poids : 1
+
+Utilisable seulement par :
+ Mage~
+
+@35 = ~Don de l'assassin~
+@36 = ~L'énergie de cette potion envahit littéralement le corps de quiconque la boit et lui permet de réussir des attaques sournoises durant 15 tours.
+
+PARAMÈTRES :
+
+- 2 niveaux supplémentaires pour les attaques sournoises.
+- TAC0 de base : passe à 0.
+
+Poids : 1
+
+Utilisable seulement par :
+ Voleur~
+
+@37 = ~Potion de puissance d'ogre~
+@38 = ~L'énergie de cette potion envahit littéralement le corps de quiconque la boit et lui permet d'infliger des dégâts maximum à chacune de ces attaques durant 15 tours.
+
+PARAMÈTRES :
+
+Poids : 1
+
+Non utilisable par :
+ Tueur de magicien~
+
+@39 = ~Potion de bouclier spirituel~
+@40 = ~Cette potion garantit à son quiconque la boit la santé mentale dont le chaos et la folie pourraient le priver. Il se sent instantanément empli de calme et sérénité, ce qui le met à l'abri de l'influence de sorts de débilité mentale, de confusion, de charme, de terreur, d'étourdissement, d'immobilisation, de perte de moral et de sommeil. Mais il peut toujours s'enivrer ! Cette sensation dure pendant 15 tours ou jusqu'à dissipation
+
+PARAMÈTRES :
+
+- Spécial : protège de la débilité mentale, de la confusion, de la terreur, du charme, de l'immobilisation, de l'étourdissement et du sommeil.
+  Durée : 15 tours
+
+Poids : 1
+
+Non utilisable par :
+ Tueur de magicien~
+
+@41 = ~Protection magique~
+@42 = ~Une fois bue, cette potion octroie une forte protection magique et augmente les capacités de résistance aux sorts.
+
+PARAMÈTRES :
+
+- Jets de sauvegarde : +5
+  Durée : 1 jour
+
+Poids : 1
+
+Non utilisable par :
+ Tueur de magicien~
+
+@43 = ~Gardien du Portail~
+@44 = ~L'énergie de cette potion envahit littéralement le corps de quiconque la boit et lui permet d'être immunisé aux sorts de type « Emprisonnement » pendant une heure.
+
+PARAMÈTRES :
+
+Poids : 1
+
+Non utilisable par :
+ Tueur de magicien~
+
+@45 = ~Potion de guérison~
+@46 = ~Entièrement consommée, cette potion libère une vague d'énergie qui envahit littéralement le corps de quiconque la boit et lui permet de regagner tous ses points de vies perdus.
+
+PARAMÈTRES :
+
+Poids : 1~
+
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement+\|[ %tab%]+{Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+//@9001 = ~[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
+
+// WeiDU prompts
+// -------------
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

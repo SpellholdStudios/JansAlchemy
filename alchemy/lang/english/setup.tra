@@ -1,0 +1,170 @@
+@0  = ~Jan's Alchemy~
+@1  = ~You must have ToB, BGT, BG2:EE or EET installed to install Jan's Alchemy.~
+
+@11 = ~Dusty Book~
+@12 = ~Jan's Book of Brewing~
+@13 = ~This is a collection of Jan's recipes of soups, juices, sauces and potions. Despite the in-numerous mentions to turnips and family stories, you find eight useful potion brewing recipes.
+
+From his own notes, you realize each potion has specific ingredients that must be used exactly in the amounts described, a bit more or a bit less may have disastrous results, except for the gold which is used to buy common materials and you can have more than indicated.
+
+Recipe 1: Potion of Battlefield Lust
+- 2 Bloodstone gems
+- 1 Black Opal
+- 1 Oil of Speed
+- 300 gold in assorted materials
+
+Recipe 2: Mage's Draught Potion
+- 1 Moonbar Gem
+- 1 Garnet Gem
+- 1 scroll of Chaos
+- 700 gold in assorted materials
+
+Recipe 3: Assassin's Gift
+- 1 Moonstone Gem
+- 3 Horn Coral Gems
+- 1 Potion of Master Thievery
+- 700 gold
+
+Recipe 4: Potion of Ogre Power
+- 1 Aquamarine Gem
+- 2 Star Diopside Gems
+- 1 Potion of Frost Giant Strength
+- 300 gold
+
+Recipe 5: Mind Shield
+- 1 Chrysoberyl Gem
+- 3 Jasper Gems
+- 2 Potions of Clarity
+- 1 scroll of Dire Charm
+- 1 scroll of Clairvoyance
+- 2000 gold
+
+Recipe 6: Magic Ward
+- 1 Star Sapphire
+- 1 Potion of Defense
+- 1 scroll of Luck
+- 1000 gold
+
+Recipe 7: Gatekeeper
+- 1 Water Opal
+- 1 Waterstar Gem
+- 3 Potions of Freedom
+- 1 scroll of Imprisonment
+- 3000 gold
+
+Recipe 8: Heal
+- 3 Potions of Healing
+- 3 Potions of Extra Healing
+- 300 gold
+~
+@14 = ~Jan's Book of Brewing 
+
+This is a collection of Jan's recipes of 8 potions.~
+
+/* unused as of v.7.0.0
+@21 = ~Potion~	// = #6976
+@22 = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1~	// = #16264
+*/
+@23 = ~Gulp!~
+@24 = ~Expired:~
+
+@31 = ~Potion of Battlefield Lust~
+@32 = ~Once consumed, this potion will cause a surge of energy to travel through the body raising the drinker's prowess in combat. This provides all the bonuses of a faster and preciser attack for the duration of the effect, which is 15 turns.
+Multiple potions have only partial benefits.
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@33 = ~Mage's Draught Potion~
+@34 = ~Once consumed, this potion will cause a surge of energy to travel through the mind allowing the drinker's spells to be remembered.
+
+STATISTICS:
+
+- Recalls one spell of each level from 1 through 5.
+
+Weight: 1
+
+Only usable by:
+ Mage~
+
+@35 = ~Assassin's Gift~
+@36 = ~Once consumed, this potion will cause a surge of energy to travel through the body raising the drinker's ability to backstab for the duration of the effect, which is 15 turns.
+
+STATISTICS:
+
+- 2 backstab level bonus
+- THAC0 set to 0.
+
+Weight: 1
+
+Only usable by:
+ Thief~
+
+@37 = ~Potion of Ogre Power~
+@38 = ~Once consumed, this potion will cause a surge of energy to travel through the body raising the drinker's skills to inflict maximum damage on every hit for the duration of the effect, which is 15 turns.
+
+STATISTICS:
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@39 = ~Potion of Mind Shield~
+@40 = ~This potion will maintain clarity and order from encroaching chaos and insanity. After drinking this potion, the imbiber feels an overwhelming feeling of calm and purpose, such that he will be unaffected by threatening influences such as feeblemind, confusion, charm, horror, stun, hold, morale failure and unconsciousness, but you still can get drunk! This feeling will last for the duration of the enchantment or until dispelled.
+
+STATISTICS:
+
+- Special: Prevents feeblemind, confusion, fear, charm, stun, hold and unconsciousness.
+  Duration: 15 turns
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@41 = ~Magic Ward~
+@42 = ~Drinking this potion imbues the person with a strong magical protection, enhancing the chances to resist spells more effectively.
+
+STATISTICS:
+
+- Saving Throws: +5
+  Duration: 1 day
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@43 = ~Gatekeeper~
+@44 = ~Once consumed, this potion will cause a surge of energy to travel through the body enabling the drinker to defend against entombment-like spells and effects for 1 hour.
+
+STATISTICS:
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@45 = ~Heal~
+@46 = ~Once consumed, this potion will cause a surge of energy to travel through the body allowing the drinker to regain any lost health, effectively curing all physical damage suffered.
+
+STATISTICS:
+
+- Special: Restores all Hit Points.
+
+Weight: 1~
+
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+//@9001 = ~[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
