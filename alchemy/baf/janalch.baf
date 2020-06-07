@@ -1,0 +1,19 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Jan")
+		DisplayStringHead(Myself,22543)  // ~Ладно, посмотрим, что сможем сделать.~ ~All right, I'll see what I can do.~
+		ForceSpell(Myself,EFFECT_ONLY)
+		Wait(2)
+		CreateVisualEffectObject("ICCSWOUI",Myself)
+		Wait(2)
+		DisplayStringHead(Myself,18525)  // ~ Ого, я могу сделать *это*.~ [JANJAN28]	~Oh, I can do *that*.~ [JANJAN28]
+		Wait(2)
+		CreateVisualEffectObject("ICBLESAI",Myself)
+		Wait(2)
+		CreateVisualEffectObject("ICPRAYI",Myself)
+		Wait(1)
+		DisplayStringHead(Myself,18526)  // ~ Понятно.~ [JANJAN29]	~Got it.~ [JANJAN29]
+		EndCutSceneMode()
+END

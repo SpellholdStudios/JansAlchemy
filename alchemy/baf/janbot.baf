@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Jan")
+		DisplayStringHead(Myself,22543)  // ~Ладно, посмотрим, что сможем сделать.~	~All right, I'll see what I can do.~
+		ForceSpell(Myself,EFFECT_ONLY)
+		Wait(2)
+		CreateVisualEffectObject("ICCSWOUI",Myself)
+		Wait(2)
+		DisplayStringHead(Myself,18533)  // ~ Знаешь, это напоминает мне о тех временах... давным-давно...~ [JANJAN33]	~You know, this reminds me of that time... way back...~ [JANJAN33]
+		Wait(7)
+		ReallyForceSpell(Myself,CUTSCENE_DAMAGE_1C)
+		Wait(2)
+		DisplayStringHead(Myself,18575)  // ~ Усталость ушла. Мои извинения.~ [JANJAN42]	~Lost my frazzel! Apologies.~ [JANJAN42]
+		EndCutSceneMode()
+END
