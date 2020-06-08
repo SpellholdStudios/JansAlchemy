@@ -16,7 +16,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v800-ee-compatible/">Jan's Alchemy</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/alchemy-readme.html)
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/alchemy-readme.txt)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/801-jans-alchemy/)<br>
 
@@ -150,7 +150,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## <a name="versions" id="versions"></a>Versions History
 
-##### Version 8.0.0 (June 7, 2020)
+##### Version 8.0.0 (June 8, 2020)
 
 - Added *alchemy.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *Setup-Alchemy.tp2* -> *alchemy.tp2* to support AL|EN's "Project Infinity".
