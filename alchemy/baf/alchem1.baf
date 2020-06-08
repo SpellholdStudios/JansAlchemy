@@ -1,0 +1,337 @@
+IF
+	Global("Alchemy","GLOBAL",1)
+	NumItems("POTN14",Myself,1)
+	NumItems("MISC20",Myself,2)
+	NumItems("MISC38",Myself,1)
+	PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN14")					// ~Oil of Speed~
+		DestroyItem("MISC20")					// ~Bloodstone Gem~
+		DestroyItem("MISC20")
+		DestroyItem("MISC38")					// ~Black Opal~
+		GiveItemCreate("POTX01",Myself,1,0,0)	// ~Potion of Battlefield Lust~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",1)
+	OR(4)
+		!NumItems("POTN14",Myself,1)
+		!NumItems("MISC20",Myself,2)
+		!NumItems("MISC38",Myself,1)
+		!PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN14")	// ~Oil of Speed~
+		DestroyItem("MISC20")	// ~Bloodstone Gem~
+		DestroyItem("MISC20")
+		DestroyItem("MISC38")	// ~Black Opal~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",2)
+	NumItems("SCRL5P",Myself,1)
+	NumItems("MISC40",Myself,1)
+	NumItems("MISC34",Myself,1)
+	PartyGoldGT(699)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(700)
+		DestroyGold(700)
+		DestroyItem("SCRL5P")					// ~scroll of Chaos~
+		DestroyItem("MISC40")					// ~Moonbar Gem~
+		DestroyItem("MISC34")					// ~Garnet Gem~
+		GiveItemCreate("POTX02",Myself,1,0,0) 	// ~Mage's Draught Potion~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",2)
+	OR(4)
+		!NumItems("SCRL5P",Myself,1)
+		!NumItems("MISC40",Myself,1)
+		!NumItems("MISC34",Myself,1)
+		!PartyGoldGT(699)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(700)
+		DestroyGold(700)
+		DestroyItem("SCRL5P")	// ~scroll of Chaos~
+		DestroyItem("MISC40")	// ~Moonbar Gem~
+		DestroyItem("MISC34")	// ~Garnet Gem~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",3)
+	NumItems("POTN36",Myself,1)
+	NumItems("MISC35",Myself,3)
+	NumItems("MISC27",Myself,1)
+	PartyGoldGT(699)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(700)
+		DestroyGold(700)
+		DestroyItem("POTN36")					// ~Potion of Master Thievery~
+		DestroyItem("MISC35")					// ~Horn Coral Gem~
+		DestroyItem("MISC35")
+		DestroyItem("MISC35")
+		DestroyItem("MISC27")					// ~Moonstone Gem~
+		GiveItemCreate("POTX03",Myself,1,0,0)	// ~Assassin's Gift~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",3)
+	OR(4)
+		!NumItems("POTN36",Myself,1)
+		!NumItems("MISC35",Myself,3)
+		!NumItems("MISC27",Myself,1)
+		!PartyGoldGT(699)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(700)
+		DestroyGold(700)
+		DestroyItem("POTN36")	// ~Potion of Master Thievery~
+		DestroyItem("MISC35")	// ~Horn Coral Gem~
+		DestroyItem("MISC35")
+		DestroyItem("MISC35")
+		DestroyItem("MISC27")	// ~Moonstone Gem~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",4)
+	NumItems("POTN04",Myself,1)
+	NumItems("MISC31",Myself,2)
+	NumItems("MISC33",Myself,1)
+	PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN04")					// ~Potion of Frost Giant Strength~
+		DestroyItem("MISC31")					// ~Star Diopside~
+		DestroyItem("MISC31")
+		DestroyItem("MISC33")					// ~Aquamarine Gem~
+		GiveItemCreate("POTX04",Myself,1,0,0)	// ~Potion of Ogre Power~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",4)
+	OR(4)
+		!NumItems("POTN04",Myself,1)
+		!NumItems("MISC31",Myself,2)
+		!NumItems("MISC33",Myself,1)
+		!PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN04")	// ~Potion of Frost Giant Strength~
+		DestroyItem("MISC31")	// ~Star Diopside~
+		DestroyItem("MISC31")
+		DestroyItem("MISC33")	// ~Aquamarine Gem~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",5)
+	NumItems("POTN21",Myself,2)
+	NumItems("MISC23",Myself,3)
+	NumItems("MISC30",Myself,1)
+	NumItems("SCRL1S",Myself,1)
+	NumItems("SCRL1D",Myself,1)
+	PartyGoldGT(1999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(2000)
+		DestroyGold(2000)
+		DestroyItem("POTN21")					// ~Potion of Clarity~
+		DestroyItem("POTN21")
+		DestroyItem("MISC23")					// ~Jasper Gem~
+		DestroyItem("MISC23")
+		DestroyItem("MISC23")
+		DestroyItem("MISC30")					// ~Chrysoberyl Gem~
+		DestroyItem("SCRL1S")					// ~scroll of Dire Charm~
+		DestroyItem("SCRL1D")					// ~scroll of Clairvoyance~
+		GiveItemCreate("POTX05",Myself,1,0,0)	// ~Potion of Mind Shield~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",5)
+	OR(6)
+		!NumItems("POTN21",Myself,2)
+		!NumItems("MISC23",Myself,3)
+		!NumItems("MISC30",Myself,1)
+		!NumItems("SCRL1S",Myself,1)
+		!NumItems("SCRL1D",Myself,1)
+		!PartyGoldGT(1999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(2000)
+		DestroyGold(2000)
+		DestroyItem("POTN21")	// ~Potion of Clarity~
+		DestroyItem("POTN21")
+		DestroyItem("MISC23")	// ~Jasper Gem~
+		DestroyItem("MISC23")
+		DestroyItem("MISC23")
+		DestroyItem("MISC30")	// ~Chrysoberyl Gem~
+		DestroyItem("SCRL1S")	// ~scroll of Dire Charm~
+		DestroyItem("SCRL1D")	// ~scroll of Clairvoyance~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",6)
+	NumItems("POTN24",Myself,1)
+	NumItems("MISC41",Myself,1)
+	NumItems("SCRL93",Myself,1)
+	PartyGoldGT(999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(1000)
+		DestroyGold(1000)
+		DestroyItem("POTN24")					// ~Potion of Defense~
+		DestroyItem("MISC41")					// ~Star Sapphire~
+		DestroyItem("SCRL93")					// ~scroll of Luck~
+		GiveItemCreate("POTX06",Myself,1,0,0)	// ~Magic Ward~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",6)
+	OR(4)
+		!NumItems("POTN24",Myself,1)
+		!NumItems("MISC41",Myself,1)
+		!NumItems("SCRL93",Myself,1)
+		!PartyGoldGT(999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(1000)
+		DestroyGold(1000)
+		DestroyItem("POTN24")	// ~Potion of Defense~
+		DestroyItem("MISC41")	// ~Star Sapphire~
+		DestroyItem("SCRL93")	// ~scroll of Luck~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",7)
+	NumItems("POTN45",Myself,3)
+	NumItems("MISC39",Myself,1)
+	NumItems("MISC28",Myself,1)
+	NumItems("SCRL9S",Myself,1)
+	PartyGoldGT(2999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(3000)
+		DestroyGold(3000)
+		DestroyItem("POTN45")					// ~Potion of Freedom~
+		DestroyItem("POTN45")
+		DestroyItem("POTN45")
+		DestroyItem("MISC39")					// ~Water Opal~
+		DestroyItem("MISC28")					// ~Waterstar Gem~
+		DestroyItem("SCRL9S")					// ~scroll of Imprisonment~
+		GiveItemCreate("POTX07",Myself,1,0,0)	// ~Gatekeeper~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",7)
+	OR(5)
+		!NumItems("POTN45",Myself,3)
+		!NumItems("MISC39",Myself,1)
+		!NumItems("MISC28",Myself,1)
+		!NumItems("SCRL9S",Myself,1)
+		!PartyGoldGT(2999)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(3000)
+		DestroyGold(3000)
+		DestroyItem("POTN45")	// ~Potions of Freedom~
+		DestroyItem("POTN45")
+		DestroyItem("POTN45")
+		DestroyItem("MISC39")	// ~Water Opal~
+		DestroyItem("MISC28")	// ~Waterstar Gem~
+		DestroyItem("SCRL9S")	// ~scroll of Imprisonment~
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
+
+IF
+	Global("Alchemy","GLOBAL",8)
+	NumItems("POTN08",Myself,3)
+	NumItems("POTN52",Myself,3)
+	PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN08")					// ~Potion of Healing~
+		DestroyItem("POTN08")
+		DestroyItem("POTN08")
+		DestroyItem("POTN52")					// ~Potion of Extra Healing~
+		DestroyItem("POTN52")
+		DestroyItem("POTN52")
+		GiveItemCreate("POTX08",Myself,1,0,0)	// ~Heal~
+		StartCutSceneMode()
+		StartCutScene("janalch")
+END
+
+IF
+	Global("Alchemy","GLOBAL",8)
+	OR(3)
+		!NumItems("POTN08",Myself,3)
+		!NumItems("POTN52",Myself,3)
+		!PartyGoldGT(299)
+THEN
+	RESPONSE #100
+		SetGlobal("Alchemy","GLOBAL",0)
+		TakePartyGold(300)
+		DestroyGold(300)
+		DestroyItem("POTN08")	// ~Potion of Healing~
+		DestroyItem("POTN08")
+		DestroyItem("POTN08")
+		DestroyItem("POTN52")	// ~Potion of Extra Healing~
+		DestroyItem("POTN52")
+		DestroyItem("POTN52")
+		StartCutSceneMode()
+		StartCutScene("janbot")
+END
