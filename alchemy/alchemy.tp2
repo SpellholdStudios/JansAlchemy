@@ -1,0 +1,213 @@
+BACKUP ~alchemy/backup~
+//AUTHOR ~unknown~
+SUPPORT ~Spellhold Studios at http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v800-ee-compatible/~
+
+VERSION ~v8.0.0~
+
+README ~alchemy/readme/alchemy-readme.txt~
+
+ALWAYS
+
+	/* -------------------------------------------------------------------------------- *
+	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
+	 * -------------------------------------------------------------------------------- */
+	OUTER_SET is_ee = (GAME_IS ~bg2ee eet~) ? 1 : 0					// EE game
+
+	/* -------------------------------------------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE                                       *
+	 *    No exception, everything needs to be converted                                *
+	 * -------------------------------------------------------------------------------- */
+	ACTION_DEFINE_ARRAY alch_reload BEGIN setup END
+	ACTION_DEFINE_ARRAY alch_noconvert BEGIN END
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charsets = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/lang~
+			noconvert_array = alch_noconvert
+			reload_array = alch_reload
+	END
+
+	/* Loads in any shared functions library (general macros and functions) */
+	INCLUDE ~alchemy/lib/gw_functions.tpa~	// Loads macros and functions library dealing with tooltip appending and specific EE items descriptions.
+
+END
+
+AUTO_TRA ~alchemy/lang/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~alchemy/lang/english/setup.tra~
+
+LANGUAGE ~Deutsch (Uebersetzung von Jarl)~
+         ~german~
+         ~alchemy/lang/german/setup.tra~
+
+LANGUAGE ~Francais (traduction : SkipCool)~
+         ~french~
+         ~alchemy/lang/french/setup.tra~
+
+LANGUAGE ~Russian (translation by Austin & AERIE.ru Team)~
+         ~russian~
+         ~alchemy/lang/russian/setup.tra~
+
+
+/* =================== *
+ *    Jan's Alchemy    *
+ * ==================== */
+BEGIN @0
+DESIGNATED 0 LABEL ~jan_alchemy~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~You must have ToB, BGT, BG2:EE or EET installed to install Jan's Alchemy.~
+
+/* ---------------- *
+ *  Items & Spells  *
+ * ---------------- */
+
+// Jan's Book of Brewing
+// ---------------------
+COPY ~alchemy/itm/jantome.itm~ ~override~
+	SAY NAME1 @11
+	SAY NAME2 @12
+	SAY DESC @13
+	PATCH_IF is_ee BEGIN
+		LPF ~GW_ITEM_RESTRICT_USABILITY_EE~ STR_VAR GW_restrict = JAN GW_kind = "script_name" GW_power = 1 GW_mess319 = 8652 END
+	END
+BUT_ONLY
+
+COPY ~alchemy/spl/jalchem.spl~ ~override~
+	SAY NAME1 @12
+	SAY UNIDENTIFIED_DESC @14
+BUT_ONLY
+
+COPY ~alchemy/2da~ ~override~
+
+// Potion of Battlefield Lust
+// --------------------------
+COPY ~alchemy/itm/potx01.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @31
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@32" END
+	SAY 0xde @23
+	SAY 0x22e @24
+	SAY 0x25e @31
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan01.spl~ ~override~
+	SAY NAME1 @31
+BUT_ONLY
+
+// Mage's Draught Potion
+// ---------------------
+COPY ~alchemy/itm/potx02.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @33
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@34" END
+	SAY 0xde @23
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan02.spl~ ~override~
+	SAY NAME1 @33
+BUT_ONLY
+
+// Assassin's Gift
+// ---------------
+COPY ~alchemy/itm/potx03.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @35
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@36" END
+	SAY 0xde @23
+	SAY 0x1fe @24
+	SAY 0x22e @35
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan03.spl~ ~override~
+	SAY NAME1 @35
+BUT_ONLY
+
+// Potion of Ogre Power
+// --------------------
+COPY ~alchemy/itm/potx04.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @37
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@38" END
+	SAY 0xde @23
+	SAY 0x19e @24
+	SAY 0x1ce @37
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan04.spl~ ~override~
+	SAY NAME1 @37
+BUT_ONLY
+
+// Potion of Mind Shield
+// ---------------------
+COPY ~alchemy/itm/potx05.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @39
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@40" END
+	SAY 0xae @23
+	SAY 0xc4e @24
+	SAY 0xc7e @39
+	PATCH_IF is_ee BEGIN
+		LPF CLONE_EFFECT INT_VAR silent = 0 check_globals = 0 multi_match = 1 match_opcode = 142 match_parameter2 = 37 opcode = 328 parameter1 = 0 parameter2 = 67 special = 1 STR_VAR insert = below END	// BUFF_PRO_EFFECTS
+		LPF CLONE_EFFECT INT_VAR silent = 0 check_globals = 0 multi_match = 1 match_opcode = 142 match_parameter2 = 37 opcode = 328 parameter1 = 0 parameter2 = 106 special = 1 STR_VAR insert = below END	// RESIST_FEAR
+		PATCH_FOR_EACH effects IN ~a7!in13b~ ~spwi205~ ~spin105~ BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_globals = 0 multi_match = 1 match_opcode = 106 opcode = 321 timing = 0 parameter2 = 0 STR_VAR insert = first resource = EVAL "%effects%" END
+		END
+	END
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan05.spl~ ~override~
+	SAY NAME1 @39
+BUT_ONLY
+
+// Magic Ward
+// ----------
+COPY ~alchemy/itm/potx06.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @41
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@42" END
+	SAY 0x1ce @23
+	SAY 0x25e @24
+	SAY 0x28e @41
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan06.spl~ ~override~
+	SAY NAME1 @41
+BUT_ONLY
+
+// Gatekeeper
+// ----------
+COPY ~alchemy/itm/potx07.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @43
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@44" END
+	SAY 0x13e @23
+	SAY 0x1ce @24
+	SAY 0x1fe @43
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan07.spl~ ~override~
+	SAY NAME1 @43
+BUT_ONLY
+
+// Heal
+// ----
+COPY ~alchemy/itm/potx08.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @22
+	SAY NAME2 @45
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@46" END
+	SAY 0x10e @23
+BUT_ONLY
+
+COPY ~alchemy/spl/spjan08.spl~ ~override~
+	SAY NAME1 @45
+BUT_ONLY
+
+/* --------- *
+ *  Scripts  *
+ * --------- */
+//COPY_EXISTING ~jan.bcs~ ~override/jan.bcs~
+EXTEND_BOTTOM ~jan.bcs~ ~alchemy/script/jan.baf~
+
+COMPILE ~alchemy/baf~
