@@ -71,6 +71,7 @@ Current HP set to 100%
 
 
 VERSION HISTORY
+===============
 
 Version 8.1.0 (August 30, 2020)
 - Added Italian translation (by ilot).
