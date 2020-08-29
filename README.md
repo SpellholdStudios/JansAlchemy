@@ -17,7 +17,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/alchemy-readme.txt)
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/alchemy-readme.txt)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/801-jans-alchemy/)<br>
 
