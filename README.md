@@ -1,7 +1,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/JansAlchemy?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Russian&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1></a>Jan's Alchemy</h1>
 
@@ -13,14 +13,15 @@ Baldur's Gate Trilogy and EET<h3>
 
 **Original Author:** unknown  
 **Mod Website:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v800-ee-compatible/">Jan's Alchemy</a>  
+**Mod Forum:** <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v810-ee-compatible/">Jan's Alchemy</a>  
 
+## 
 
 [Read the mod's readme](http://spellholdstudios.github.io/readmes/alchemy-readme.txt)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/801-jans-alchemy/)<br>
 
-&nbsp;
+## 
 
 <div align="center">
 <a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Versions History</a></br>
@@ -41,7 +42,7 @@ Jan's Book of Brewing is a magical tome that will allow Jan to create 8 potions 
 
 This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
-This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v800-ee-compatible/">report them on the forum!</a><br>
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v810-ee-compatible/">report them on the forum!</a><br>
 
 >Although it is not required for the Demon Summoning Ritual mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -94,9 +95,9 @@ The Jan's Alchemy mod for Linux is distributed in the same compressed archive an
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
-Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidU and weinstall to /usr/bin. Following that, open a terminal, **cd** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidU and weinstall to /usr/bin. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
 
-To install, run **`weinstall setup-alchemy`** in your game folder. Then run **`wine BGMain.exe`** (or **`wine Baldur.exe`** for EE games) and start playing.
+To install, run **`weinstall setup-alchemy`** in your game folder. Then run **`wine BGMain.exe`** (or **`wine baldur.exe`** for EE games) and start playing.
 
 ## 
 
@@ -125,15 +126,16 @@ The installer includes one single component, the main component.
 
 #### Special Acknowledgements to:
 
+- ilot: Italian translation.
 - AL|EN: Wrote <a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a> tool which automatically provides Windows, Linux and Mac versions in the same archive file.
 - Deratiseur: Provided native BG2:EE compatible version (v7).
-- Austin & AERIE.ru Team: Provided Russian translation.
-- SkipCool: Provided French translation.
-- Jarl : Provided German translation.
+- Austin & AERIE.ru Team: Russian translation.
+- SkipCool: French translation.
+- Jarl : German translation.
 - Badgert: first WeiDU conversion.
 - Bill Keegan: Provided original files.
 
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v800-ee-compatible/">mod forum</a>.</br>
+&#9755; If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/60826-jans-alchemy-updated-to-v810-ee-compatible/">mod forum</a>.</br>
 
 ## 
 
@@ -150,14 +152,20 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## <a name="versions" id="versions"></a>Versions History
 
+##### Version 8.1.0 (August 30, 2020)
+
+- Added Italian translation (by ilot).
+
+## 
+
 ##### Version 8.0.0 (June 8, 2020)
 
 - Added *alchemy.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *Setup-Alchemy.tp2* -> *alchemy.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
+- Fixed *infer_charsets* variable name in `HANDLE_CHARSETS` function.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*jan_alchemy*" `LABEL`.
-- Fixed *infer_charsets* variable name in `HANDLE_CHARSETS` function.
 - Added native EET compatibility.
 - *alchem1.baf*: replaced `CreateItem` action with `GiveItemCreate` and added `DestroyGold` action. Fixed Potion of Mind Shield recipe (2 Potions of Clarity - was 1 - and 2 000 gp - was 1 000).
 - Spl files: removed hard-coded spell descriptions.
@@ -184,7 +192,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 		- Fixed wrong duration effects values (300 - was 360).
 	- <ins>Heal</ins> (potx08.itm):
 		- Removed Wizard Slayer restriction flag.
-- Updated tra files for compatibility with GW_UPDATE_ITM_DESCRIPTION_TO_EE WeiDU function requirements which automatically removes usability restrictions for EE games.
+- Updated tra files for compatibility with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function requirements which automatically removes usability restrictions for EE games.
 - Added German WeiDU prompts.
 - Updated translations (Gwendolyne and Austin).
 - Updated and renamed readme file to *alchemy-readme.txt*, then moved it into new "*readme*" folder.
