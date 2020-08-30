@@ -1,0 +1,264 @@
+@0  = ~Alchimia di Jan~
+@1  = ~Devi avere installato ToB, BGT, BG2:EE o EET per installare il mod Alchimia di Jan.~
+
+@11 = ~Libro Impolverato~
+@12 = ~Libro delle Misture di Jan~
+@13 = ~Questo libro contiene una collezione di ricette di zuppe, sughi, intingoli e pozioni di Jan. Malgrado i numerosi accenni alle rape e alle storie della sua famiglia, ci sono otto utili ricette di pozioni.
+
+Dalle sue note si capisce che per creare ognuna delle otto pozioni servono i loro specifici ingredienti che devono essere utilizzati esattamente come descritti altrimenti se si aumentano o si diminuiscono le porzioni si potrebbero ottenere dei risultati disastrosi, il solo ingrediente che si può utilizzare senza pericoli è l'oro che ti servirà per acquistare gli ingredienti ed i materiali comuni indicati.
+
+Ricetta numero 1: Pozione della Brama di Combattere
+2 Gemme Eliotropio 
+1 Opale nero
+1 Olio di Velocità
+300 monete d'oro di vario genere
+
+Ricetta numero 2: Pozione del Ricordo del Mago
+1 Raggio di luna
+1 Gemma Granato
+1 Pergamena del Caos 
+700 monete d'oro di vario genere
+
+Ricetta numero 3: Dono dell'Assassino
+1 Raggio di luna
+3 Gemme Corallo nero
+1 Pozione di Furto Dominante
+700 monete d'oro
+
+Ricetta numero 4: Pozione del Potere dell'Ogre
+1 Gemma Acquamarina
+2 Gemme Diopsidi a stella
+1 Pozione di Forza del Gigante dei Ghiacci
+300 monete d'oro
+
+Ricetta numero 5: Scudo Mentale 
+1 Gemma Crisoberillo
+3 Gemme Diaspro
+2 Pozioni di chiarezza
+1 Pergamena di Charme estremo 
+1 Pergamena di Chiaroveggenza
+2000 monete d'oro
+
+Ricetta numero 6: Difesa dalla Magia
+1 Zaffiro stellato
+1 Pozione di difesa
+1 Pergamena di Fortuna
+1000 monete d'oro
+
+Ricetta numero 7: Guardiano
+1 Opale d'acqua
+1 Stella d'Acqua
+3 Pozioni di Libertà
+1 Pergamena di Imprigionamento
+3000 monete d'oro
+
+Ricetta numero 8: Cura
+3 Pozioni di Guarigione
+3 Pozioni di Super Guarigione 
+300 monete d'oro
+~
+@14 = ~Libro degli Artifici di Jan 
+
+Si tratta di una collezione di 8 ricette per pozioni di Jan.~
+
+/* unused as of v.7.0.0
+@21 = ~Pozione~	// = #6976
+@22 = ~Le pozioni, di solito, vengono trovate in contenitori di ceramica, cristallo, vetro o fiale. I fiaschi o gli altri recipienti normalmente contengono abbastanza fluido in modo da fornire a una persona una dose completa sufficiente per ottenere gli effetti della pozione.
+
+STATISTICHE:
+
+Peso: 1~	// = #16264
+*/
+@23 = ~Gulp!~
+@24 = ~Bevuta:~
+
+@31 = ~Pozione della Brama di Combattere~
+@32 = ~Una volta ingerita questa pozione il corpo di colui che la beve viene attraversato da un'onda di energia che gli permette di migliorare le sue abilità in combattimento. Viene fornito di tutti i bonus di un rapido e preciso attacco per la durata dell’effetto, che durerà 15 turni.
+L’utilizzo di più pozioni avranno solo dei benefici parziali.
+
+Peso: 1
+
+Non utilizzabile da:
+ Ammazzastregoni~
+
+@33 = ~Pozione del Ricordo del Mago~
+@34 = ~Il corpo di colui che la beve questa pozione viene attraversato da un'onda di energia che gli permette di ricordare incantesimi che ha già lanciato.
+
+STATISTICHE:
+
+- Rechiama un incantesimo dal livello 1 al livello 5.
+
+Peso: 1
+
+Utilizzabile solo da:
+ Mago~
+
+@35 = ~Dono dell'Assassino~
+@36 = ~Bevendo questa pozione il corpo viene attraversato da un'onda di energia che gli permette riuscire negli attacchi alle spalle per tutta la durata dell'effetto, che è di 15 turni.
+
+STATISTICHE:
+
+- 2 livelli di bonus per il colpo alle spalle
+- Il THAC0 è collocato a 0.
+
+Peso: 1
+
+Utilizzabile solo da:
+ Ladro~
+
+@37 = ~Pozione del Potere dell'Ogre~
+@38 = ~Una volta bevuta questa pozione il corpo di colui che la beve viene attraversato da un'onda di energia che gli permette di infliggere il massimo dei danni ad ogni colpo per tutta la durata dell'effetto, che è di 15 turni.
+
+STATISTICHE:
+
+Peso: 1
+
+Non utilizzabile da:
+ Ammazzastregoni~
+
+@39 = ~Pozione dello Scudo Mentale ~
+@40 = ~Dopo aver bevuto questa pozione, si sente una travolgente sensazione di calma e determinazione, quindi il bevitore sarà immune da tutto ciò che minaccerà la mente come la regressione mentale, la confusione, lo charme, l'orrore, lo stordimento, il blocco, il fallimento morale e l'incoscienza, ma ci sarà la possibilità di diventare ubriaco! Questa sensazione rimarrà fino a quando non terminerà la durata dell'incantesimo o fino a che non si dissolverà.
+
+STATISTICHE:
+
+- Speciale: Previene la regressione mentale, la confusione, la paura, lo charme, lo stordimento, il blocco e l’inconsapevolezza.
+  Durata: 15 turni
+
+Peso: 1
+
+Non utilizzabile da:
+ Ammazzastegoni~
+
+@41 = ~Difesa dalla Magia~
+@42 = ~Bevendo questa pozione si ottiene una forte protezione magica, aumentando le possibilità di resistere agli incantesimi.
+
+STATISTICE:
+
+- Tiri Salvezza: +5
+  Durata: 1 giorno
+
+Peso: 1
+
+Non utilizzabile da:
+ Ammazzastregoni~
+
+@43 = ~Guardiano~
+@44 = ~Una volta bevuta questa pozione il corpo viene attraversato da un'onda di energia che permette di difendersi dagli incantesimi tipo imprigionamento e dai loro effetti per 1 ora.
+
+STATISTICHE:
+
+Peso: 1
+
+Non utilizzabile da:
+ Ammazzastregoni~
+
+@45 = ~Cura~
+@46 = ~Il corpo di colui che beve questa pozione viene attraversato da un'onda di energia permettendogli di recuperare tutta la salute perduta, curando efficacemente tutti i danni fisici subiti.
+
+STATISTICHE:
+
+- Speciale: Ripristina tutti i Punti Ferita.
+
+Peso: 1~
+
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~\([Ss]olo[ %tab%]+\)?[Uu]tilizzabile[ %tab%]+\([Ss]olo[ %tab%]+\)?[Da]a[ %tab%]*:~
+//@9001 = ~[Uu]tilizzabile[ %tab%]+[Dd]a[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilizzabile[ %tab%]+[Dd]a[ %tab%]*:~
+
+
+// WeiDU prompts
+//--------------
+@-1000= "Il mod %TP2_FILE_NAME% contiene"
+@-1001= "componenti opzionali distinti.
+Per guadagnare tempo puoi scegliere quello che desideri fare a livello generale piuttosto che rispondere alle single domande.
+"
+@-1002= "Cosa desideri fare di tutti componenti che NON sono ancora installati?
+[I]nstallarli, [S]alta, dom[A]nda per ciascuno? "
+@-1003= " Cosa desideri fare di tutti componenti che sono GIÀ installati?
+[R]einstallarli, rim[U]overli, [S]alta, dem[A]nda per ciascuno? "
+
+@-1004= "PER FAVORE, invia il file per e-mail"
+@-1005= "a"
+
+@-1006= "Installale il componente ["
+@-1007= "] ?
+[R]einstallare, co[N]servare, rim[U]vere o [Q]lascia? "
+@-1008= "] ?
+[I]nstallare, [N]on installare o [Q]lascia? "
+
+@-1009= "Immettere una parte del nome del mod: "
+
+@-1010= "Reinstallazione del componente ["
+@-1011= "] "
+@-1012= "Reinstallation nella lingua"
+
+@-1013= "Cancellazione della vecchia installazione di ["
+@-1014= "] ..."
+@-1015= "VECCHIA INSTALLAZIONE RIMOSSA CON SUCCESSO"
+
+@-1016= "Installazione in corso"
+@-1017= "ERRORE durante l’installazione di ["
+@-1018= "], ritorno allo stato precedente"
+@-1019= "INSTALLATION RIUSCITA"
+@-1020= "Saltare"
+@-1021= "Cancellazione di ["
+@-1022= "] (componente #"
+@-1023= ")"
+@-1024= "CANCELLAZIONE RIUSCITA DI ["
+
+@-1025= "] ?
+[R]einstallare, co[N]servare, rim[U]overe, [Q]asciare o selezionarne uno:"
+@-1026= "] ?
+[N]on installare, [Q]lasicare o selezionane uno:"
+@-1027= " (attualmente installata)"
+
+@-1028= "Desideri visualizare I component di ["
+@-1029= "] ?
+[Y]Si, [N]No ? "
+
+@-1030= "] ?
+Scegliere uno tra:"
+@-1031= "] ?
+[R]einstallare, co[N]servare, [Q]lasciare o selezionarne uno:"
+@-1032= "INSTALLAZIONE NON RIUSCITA A CAUSA DI ERRORE"
+@-1033= "INSTALLAZIONE CON AVVISI"
+@-1034= "Desideri visualizzare il file leggimi (ReadMe) ? [Y]Si [N]No"
+@-1035= "Usare la lingua"
+
+@-1036= "Salta il GRUPPO ["
+@-1037= "] a causa di requisiti non soddisfatti."
+
+@-1038= "dom[A]nda per ciascun componente, [S]alta, o scegli una selezione predefinita:"
+@-1039= "dom[A]nda per ogni componente, [R]einstallare la configurazione corrente, rim[U]overe tutto, [S]alta, o scegli una selezione predefinita:"
+
+@-1040= "
+Seleziona la lingua in cui desideri giocare.
+Se in seguito vorrai scegliere una lingua diversa, devi modificare il file weidu.conf e reinstallare i mod.
+"
+@-1041= "Ceco"
+@-1042= "Tedesco"
+@-1043= "Inglese"
+@-1044= "Spagnolo"
+@-1045= "Francese"
+@-1046= "Italiano"
+@-1047= "Polacco"
+@-1048= "Portoghese"
+@-1049= "Turco"
+@-1050= "Giapponese"
+@-1051= "Coreano"
+@-1052= "Cinese semplificato"
+@-1053= "Russo"
+@-1054= "Ucraino"
+
+@-1060= "
+Questo gioco è disponibile in diverse lingue ma WeiDU non sa quale lingua di gioco è stata utilizzata quando è stato installato questo mod.
+
+Indica quale lingua di gioco è stata utilizzata quando hai installato questo mod. La tua selezione non verrà salvata e verrà utilizzata solo fino alla chiusura di WeiDU.
+"
+@-1061= "
+Utilizzazione di"
+@-1062= " e "

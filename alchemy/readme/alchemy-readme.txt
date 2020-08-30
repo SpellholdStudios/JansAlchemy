@@ -71,14 +71,18 @@ Current HP set to 100%
 
 
 VERSION HISTORY
+===============
+
+Version 8.1.0 (August 30, 2020)
+- Added Italian translation (by ilot).
 
 Version 8.0.0 (June 8, 2020)
 - Added alchemy.ini metadata file to support AL|EN's "Project Infinity".
 - Renamed Setup-Alchemy.tp2 -> alchemy.tp2 to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
+- Fixed "infer_charsets" variable name in `HANDLE_CHARSETS` function.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "jan_alchemy" `LABEL`.
-- Fixed "infer_charsets" variable name in `HANDLE_CHARSETS` function.
 - Added native EET compatibility.
 - alchem1.baf: replaced `CreateItem` action with `GiveItemCreate` and added `DestroyGold` action. Fixed Potion of Mind Shield recipe (2 Potions of Clarity - was 1 - and 2 000 gp - was 1 000).
 - Spl files: removed hard-coded spell descriptions.
